@@ -10,13 +10,14 @@
         <script>
             window.PAGE_TYPE = "<%- page.type %>"
         </script>
-        <%- css(page.index ? 'css/index' : 'css/page') %>
+        <%- css(page.__index ? 'css/index' : 'css/page') %>
         <%- partial('partials/ga') %>
         <script src="/js/vue.min.js"></script>
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/highlight.css">
+        <script src="/js/highlight.min.js"></script>
         <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"-->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script> -->
         <script type="text/javascript">
             hljs.initHighlightingOnLoad();
         </script>
@@ -27,21 +28,33 @@
             <a class="logo" href="/"></a>
         </div>
         
-        <% if (page.index) { %>
-            <%- partial('partials/index') %>
-        <% } else { %>
+        <% if (!page.__index) { %>
             <%- partial('partials/header') %>
         <% } %>
 
         <div id="main">
-            <% if (page.blog_index) { %>
-                <%- partial('partials/blog') %>
+            <% if (!page.__index) { %>
+                
+                <% //page.content = ""; %>
+                <% //page._content = ""; %>
+                <% //page.raw = ""; %>
+                <% //page.excerpt = ""; %>
+                <% //page.prev = ""; %>
+                <% //page.next = ""; %>
+                <% //page.more = ""; %>
+                <% //console.log(page); %>
+
+                <% if (page.blog_index) { %>
+                    <%- partial('partials/blog') %>
+                <% } else { %>
+                    <%- body %>
+                <% } %>
             <% } else { %>
                 <%- body %>
             <% } %>
         </div>
 
-        <% if (!page.index) { %>
+        <% if (!page.__index) { %>
             <script src="/js/smooth-scroll.min.js"></script>
             <script src="/js/common.js"></script>
         <% } %>

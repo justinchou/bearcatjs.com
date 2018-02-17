@@ -2,6 +2,11 @@ all: update
 	hexo generate
 	cp -rf bearcat-examples public/examples
 
+g:
+	hexo clean
+	hexo generate
+	hexo server
+
 deploy:	all
 	hexo deploy
 
