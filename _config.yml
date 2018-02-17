@@ -96,6 +96,9 @@ markdown:
 # Deployment
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
 deploy:
-  type: coding.net
-  repository: https://git.coding.net/justinchou/bearcatjs.com.git
+  type: git
+  repo:
+    #gitee: git@gitee.com:justinchou/bearcatjs.com.git
+    coding: git@git.coding.net:justinchou/bearcatjs.com.git
   branch: master
+  message: Deploy By Hexo
