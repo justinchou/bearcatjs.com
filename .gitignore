@@ -4,10 +4,10 @@ db.json
 debug.log
 node_modules/
 public/
-.deploy/
+.deploy*/
 design/
 assets/
-design/
 examples/
 scaffolds
 todomvc
+*.log
