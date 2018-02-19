@@ -1,12 +1,12 @@
-title: Bearcat.js 非官方网站
+title: Bearcat.js non-official website
 ---
 
-**Bearcat.js 非官方网站**
+**Bearcat.js non-official website**
 
-部署本站的目的:
+Why this website?
 
-不知为何, 原有Bearcatjs.org访问的内容已经完全与Bearcatjs无关, 庆幸网站代码开源, 故另申请域名部署之.
+I do not know why the old `Bearcatjs.org` content is never about Bearcatjs. Lucky me, the old doc repo is open source, so I registered a new domain `Bearcatjs.com` to publish the doc.
 
-原有Bearcatjs网站:
+What a pity! Look the old Bearcatjs.org:
 
-![原有Bearcatjs网站](/images/bearcatjs.org.png)
+![Old Bearcatjs.org Website](/images/bearcatjs.org.png)
