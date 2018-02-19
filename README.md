@@ -2,6 +2,9 @@
 
 中文文档参考 [README-CN.md](README-CN.md)
 
+Preview WebSite is now on http://bearcatjs.com/.
+
+
 Old site `bearcatjs.org` is no longer about `bearcatjs`, so I fork the project to create `bearcatjs.com` to replace it.
 
 This site is built with [hexo](http://zespia.tw/hexo/). Site content is written in Markdown format located in `source`. Pull requests welcome!

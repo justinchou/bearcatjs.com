@@ -2,6 +2,10 @@
 
 For English Documents: [README.md](README.md)
 
+本站的中文翻译版本正在进行中, 参考: https://gitee.com/justinchou/bearcatjs.cn.git OR https://github.com/justinchou/bearcatjs.cn.git
+
+并且演示网站部署在 http://bearcatjs.cn/, 由于本人英文本身就是半吊子, 欢迎大神指正, 更欢迎加入翻译.
+
 原有网站 `bearcatjs.org` 不知为何原因, 现在提供服务的内容与`bearcatjs`毫无关联, 所以fork此工程建立新站`bearcatjs.com`来暂代.
 
 本站基于 [hexo](http://zespia.tw/hexo/) 编写. 内容使用Markdown编写, 保存于`source`目录下, 欢迎加入提交代码.
